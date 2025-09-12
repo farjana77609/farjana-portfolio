@@ -1,0 +1,98 @@
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+        }
+
+        .sticky-nav {
+            box-shadow: 0px 2px 14px rgba(236, 236, 236, 0.219);
+            position: fixed;
+            z-index: 999;
+            padding: 24px !important;
+
+        }
+
+        .project-card img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 40% !important;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 0px !important;
+        }
+
+        .project-img-box img {
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .project-img-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .download-section {
+            background: linear-gradient(rgba(152, 151, 151, 0.5), rgba(135, 134, 134, 0.5)), url('./assets/bg-img.png') no-repeat center/cover fixed;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+            color: #00ffff;
+        }
+
+        .modal img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .modal.show img {
+            transform: translate(-50%, -50%) scale(1);
+        }
+  
