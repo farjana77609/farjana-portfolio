@@ -12,7 +12,7 @@ My Portfolio , a responsive website showcasing my skills and projects made using
 👉 [Live Preview](https://farjana77609.github.io/farjana-portfolio/)  
 
 ## Screenshots
-![Project Screenshot](/assets\portfolio.png)
+![Project Screenshot](./assets/portfolio.png)
 
 
 
@@ -27,7 +27,7 @@ My Portfolio , a responsive website showcasing my skills and projects made using
 
 1. Clone the repo:  
 
-   
+   ```
    git clone https://github.com/farjana77609/farjana-portfolio 
-   
+   ```
 2. Open index.html in a browser.
