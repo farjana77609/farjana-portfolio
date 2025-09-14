@@ -23,10 +23,10 @@ const swiper = new Swiper(".myProjectsSwiper", {
   slidesPerView: 1,
   spaceBetween: 16,
   loop: true,
-  // autoplay: {
-  //   delay: 1800,
-  //   disableOnInteraction: false,
-  // },
+   autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -44,11 +44,11 @@ const swiper = new Swiper(".myProjectsSwiper", {
 
 // Script to download cv
 document.getElementById("downloadCV").addEventListener("click", () => {
-  const cvUrl = "./my_cv.pdf";
+  const cvUrl = "./assets/fk-cv.pdf";
 
   const link = document.createElement("a");
   link.href = cvUrl;
-  link.download = "Farzana_CV.pdf"; // filename when downloaded
+  link.download = "Farjana_CV.pdf"; // filename when downloaded
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
